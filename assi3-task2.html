@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment3 task2</title>
+</head>
+<body>
+    <script>
+    x=1;
+ integer =(Integer).application.getAttribute("hitCounter");
+if(  x==null || x == 0 ) {
+   /* First visit */
+   alert("You have visited "+x+" of times this website");
+   x = 1;
+} else {
+   /* return visit */
+   alert("You have visited "+x+" of times this website");
+   x += 1;
+}
+application.setAttribute("hitCounter", x);        </script>
+
+    
+</body>
+</html>
