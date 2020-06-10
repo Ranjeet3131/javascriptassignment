@@ -1,0 +1,29 @@
+<!DOCTYPE>
+    <html>
+    <head>
+        <title>assignment5 task7</title>
+    </head>
+    <body>
+        <h1>Shopping Cart</h1>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+            <p id="demo5"></p>
+    <script language="javascript" type="text/javascript">
+    var item1=650;
+    document.getElementById("demo").innerHTML ="Price of item1 is "+item1;
+    var quent1 = parseInt(window.prompt("Enter Quantity if item1 "));
+    document.getElementById("demo1").innerHTML ="Quantity of item1 is "+quent1;
+    var item2=100;
+    document.getElementById("demo2").innerHTML ="Price of item2 is "+item2;
+    var quent2 = parseInt(window.prompt("Enter Quantity if item2 "));
+    document.getElementById("demo3").innerHTML ="Quantity of item2 is "+quent2;
+    var shicharg=100;
+    document.getElementById("demo4").innerHTML ="Shipping Charges "+shicharg+"<br>";
+    var ans=((item1*quent1)+(item2*quent2)+shicharg)
+    document.getElementById("demo5").innerHTML ="Total Cost of your order is "+ans;
+    </script>
+    </body>
+    </html>

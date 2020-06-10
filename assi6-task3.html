@@ -1,0 +1,22 @@
+<!DOCTYPE>
+    <html>
+    <head>
+        <title>assignment6 task3</title>
+    </head>
+    <body>
+    <script language="javascript" type="text/javascript">
+    var person = prompt("Please enter your name:");
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = alert('Hello Good Morning '+person);
+    else if (hrs >= 12 && hrs <= 17)
+        greet = alert('Hello Good Afternoon '+person);
+    else if (hrs >= 17 && hrs <= 24)
+        greet = alert('Hello Good Evening '+person);
+    </script>
+    </body>
+    </html>

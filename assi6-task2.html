@@ -1,0 +1,23 @@
+<!DOCTYPE>
+    <html>
+    <head>
+        <title>assignment6 task2</title>
+    </head>
+    <body>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+    <script language="javascript" type="text/javascript">
+    var a=2,b=1;
+    x=--a;
+    document.getElementById("demo").innerHTML ="Result of --a is: "+x;
+    y=((x) - (--b));
+    document.getElementById("demo1").innerHTML ="Result of --a - --b is: "+y;
+    z=(y) + (++b);
+    document.getElementById("demo2").innerHTML ="Result of --a - --b + ++b is: "+z;
+    ans=(z)+ (b--);
+    document.getElementById("demo3").innerHTML ="Result of --a - --b + ++b + b-- is: "+z;
+    </script>
+    </body>
+    </html>

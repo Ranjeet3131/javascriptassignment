@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment7 task6</title>
+</head>
+<body>
+    <h1>Marks Sheet</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+                var sub1 = parseInt(prompt("Enter total marks of subject1"));
+                var obtmarks1 =parseInt(prompt("Enter obtained marks of subject1"));
+                var sub2 = parseInt(prompt("Enter total marks of subject2"));
+                var obtmarks2 = parseInt(prompt("Enter obtained marks of subject2"));
+                var sub3 = parseInt(prompt("Enter total marks of subject2"));
+                var obtmarks3 = parseInt(prompt("Enter obtained marks of subject3"));
+                var totalmarks=(sub1+sub2+sub3);
+                var obtmarks=(obtmarks1+obtmarks2+obtmarks3);
+                var totalprcent=((obtmarks/totalmarks)*100);
+               document.getElementById("demo").innerHTML ="Total Marks: "+totalmarks;
+               document.getElementById("demo1").innerHTML ="Obtained Marks: "+obtmarks;
+               document.getElementById("demo2").innerHTML ="Percentage: "+totalprcent+"%";
+               if(totalprcent>=80){
+               document.getElementById("demo3").innerHTML ="Grade: A-one";
+               document.getElementById("demo4").innerHTML ="Remarks: Excellent";
+               }
+               else if(totalprcent>=70){
+               document.getElementById("demo5").innerHTML ="Grade: A";
+               document.getElementById("demo6").innerHTML ="Remarks: Good";}
+               else if(totalprcent>=60){
+               document.getElementById("demo7").innerHTML ="Grade: B";
+               document.getElementById("demo8").innerHTML ="Remarks: You need to improve";}
+               else if(totalprcent<60){
+               document.getElementById("demo9").innerHTML ="Grade: Fail";
+               document.getElementById("demo10").innerHTML ="Remarks: Sorry";}
+    </script>
+</body>
+</html>

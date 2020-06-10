@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment7 task2</title>
+</head>
+<body>
+    <script>
+        
+var myDate = new Date();
+var hrs = myDate.getHours();
+var gend = prompt("Enter Your Gender");
+if (hrs < 12 && gend==="Male"||gend==="male"||gend==="MALE")
+    gend = alert('Good Morning Sir');
+    else if (hrs >= 12 && hrs <= 17 && gend==="Male"||gend==="male"||gend==="MALE")
+    gend = alert('Good Afternoon Sir');
+else if (hrs >= 17 && hrs <= 24 && gend==="Male"||gend==="male"||gend==="MALE")
+    gend = alert('Good Evening Sir');
+    else if (hrs < 12 && gend==="Female"||gend==="female"||gend==="FEMALE")
+    gend = alert('Good Morning Mam');
+    else if (hrs >= 12 && hrs <= 17 && gend==="Female"||gend==="female"||gend==="FEMALE")
+    gend = alert('Good Afternoon Mam');
+else if (hrs >= 17 && hrs <= 24 &&  gend==="Female"||gend==="female"||gend==="FEMALE")
+    gend = alert('Good Evening Mam');
+    else
+    gend=alert("incorrect gender");
+        </script>
+</body>
+</html>
+
+

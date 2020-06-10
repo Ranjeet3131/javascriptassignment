@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>assignment5 task1</title>
-    <script language="javascript">
-            function addNumbers()
-            {
-                    var val1 = parseInt(document.getElementById("value1").value);
-                    var val2 = parseInt(document.getElementById("value2").value);
-                    var ansD = document.getElementById("answer");
-                    ansD.value = val1 + val2;
-            }
-    </script>
 </head>
 <body>
-       
-                      value1 = <input type="text" id="value1" name="value1" value=""/>
-                      value2 = <input type="text" id="value2" name="value2" value=""/>
-                      <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
-                      Answer = <input type="text" id="answer" name="answer" value=""/>
+          <p id="demo"></p>
+        <script>
+            var value1 = parseInt(window.prompt("Enter first number"));
+            var value2 = parseInt(window.prompt("Enter second number"));
+            var ans=parseInt(value1+value2);
+            document.getElementById("demo").innerHTML =
+            "The Sum of "+value1+" and "+value2+" is "+ans;
+            </script>
+        
+
                  
 </body>
 </html>

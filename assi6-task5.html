@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment6 task5</title>
+<script>
+  var percent1=((sub1/totalmarks)*100);
+var percent2=((sub2/totalmarks)*100);
+var percent3=((sub3/totalmarks)*100);
+        function addNumbers()
+        {
+                var val1 = (document.getElementById("value1").value);
+                var val2 = (document.getElementById("value2").value);
+                var val3 = (document.getElementById("value3").value);
+                var val4 = parseInt(document.getElementById("value4").value);
+                var val5 = parseInt(document.getElementById("value5").value);
+                var val6 = parseInt(document.getElementById("value6").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 + val2;
+        }
+        function minusNumbers()
+        {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 - val2;
+        }
+        function multiplyNumbers()
+        {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 * val2;
+        }
+        function divideNumbers()
+        {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 / val2;
+        }
+        function modNumbers()
+        {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 % val2;
+        }
+</script>
+
+</head>
+<body>
+   
+                  value1 = <input type="text" id="value1" name="value1" value="" placeholder="Name of subject1"/><br><br>
+                  value2 = <input type="text" id="value1" name="value1" value="" placeholder="Name of subject2"/><br><br>
+                  value3 = <input type="text" id="value1" name="value1" value="" placeholder="Name of subject3"/><br><br>
+                  value4 = <input type="text" id="value1" name="value1" value="" placeholder="Enter obtained marks of subject1"/><br><br>
+                  value5 = <input type="text" id="value1" name="value1" value="" placeholder="Enter obtained marks of subject2"/><br><br>
+                  value6 = <input type="text" id="value1" name="value1" value="" placeholder="Enter obtained marks of subject3"/><br><br>
+                <input type="button" name="Sumbit" value="tap here to create table" onclick="javascript:addNumbers()"/><br><br><br>
+                  <!-- <input type="button" name="Sumbit" value="-" onclick="javascript:minusNumbers()"/>
+                  <input type="button" name="Sumbit" value="*" onclick="javascript:multiplyNumbers()"/>
+                  <input type="button" name="Sumbit" value="/" onclick="javascript:divideNumbers()"/>
+                  <input type="button" name="Sumbit" value="%" onclick="javascript:modNumbers()"/><br><br> -->
+                  <table>
+                      <tr>
+                          <th>Subject</th>
+                          <th>Total Marks</th>
+                          <th>Obtained Marks</th>
+                          <th>Percentage</th>
+                      </tr>
+                      <tr>
+                          <td>Answer = <input type="text" id="answer" name="answer" value=""/></td>
+                      </tr>
+                  </table>
+                  Answer = <input type="text" id="answer" name="answer" value=""/>
+             
+</body>
+
+</html>
+var sub1 = prompt("Name of subject1:");
+var sub2 = prompt("Name of subject2:");
+var sub3 = prompt("Name of subject3:");
+var totalmarks=100;
+var obtmarks1 =parseInt(prompt("Enter obtained marks of subject1:"));
+var obtmarks2 = parseInt(prompt("Enter obtained marks of subject2:"));
+var obtmarks3 = parseInt(prompt("Enter obtained marks of subject3:"));
