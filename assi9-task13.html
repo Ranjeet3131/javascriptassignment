@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment9 task13</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        var devices=["Keyboard","mouse","printer","monitor"];
+        document.getElementById("demo").innerHTML ="Devices: "+"<br>"+devices;
+        var devices1=devices.shift(devices);
+        document.getElementById("demo1").innerHTML ="Out: "+"<br>"+devices1;
+        var devices2=devices.shift(devices1);
+        document.getElementById("demo2").innerHTML ="Out: "+"<br>"+devices2;
+        var devices3=devices.shift(devices2);
+        document.getElementById("demo3").innerHTML ="Out: "+"<br>"+devices3;
+        var devices4=devices.shift(devices3);
+        document.getElementById("demo4").innerHTML ="Out: "+"<br>"+devices4;
+        </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment10 task7</title>
+</head>
+<body> 
+  <p id="demo"></p>
+  <p id="demo1"></p>
+        <script>  
+    var searching=prompt("Welcome to SSD Bakers. What do you want to order");
+    var search=["cake", "apple pie", "cookie", "chips", "patties"];
+    for(var j=0; j<search.length ; j++){
+    if(searching===search[j]){
+      document.getElementById("demo").innerHTML = (search[j]+" is "+"<b>available</b>"+" at index "+j+" in our bakery");
+    }
+    else
+    document.getElementById("demo1").innerHTML=("We are sorry."+searching+" is "+"<b>not available</b>"+" in our bakery");
+   }
+  
+   
+        </script> 
+</body>
+</html>

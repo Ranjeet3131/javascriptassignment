@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment9 task9</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        // taska
+        var color=["red","blue","white"];
+        var color1 =prompt("Enter color to add in the begnning");
+        color.unshift(color1);
+        document.getElementById("demo").innerHTML =color;
+        // taskb
+        var color=["red","blue","white"];
+        var color1 =prompt("Enter color to add in the last");
+        color.push(color1);
+        document.getElementById("demo1").innerHTML =color;
+        // taskc
+        var color=["red","blue","white"];
+        var color1 =prompt("Enter color 1st color to add in the begnning");
+        var color2 =prompt("Enter color 2nd color to add in the begnning");
+        color.splice(0, 0, color1,color2);
+        document.getElementById("demo2").innerHTML =color;
+        // taskd
+        var color=["red","blue","white"];
+        color.shift(color);
+        document.getElementById("demo3").innerHTML =color;
+        // taske
+        var color=["red","blue","white"];
+        color.pop(color);
+        document.getElementById("demo4").innerHTML =color;
+        // taskf
+        var color=["red","blue","white"];
+        var position1 =prompt("Enter color 1st position where you want to add color starting from zero index");
+        position1[""];
+        var color1 =prompt("Enter 1st color to add at specified index");
+        var position2 =prompt("Enter color 2nd position where you want to add color starting from zero index");
+        position2[""];
+        var color2 =prompt("Enter 2ndt color to add at specified index");
+        color.slice(position1,position2, color1,color2);
+        document.getElementById("demo5").innerHTML =color;
+         // taskg
+         var color=["red","blue","white"];
+        var position3 =prompt("Enter color 1st position where you want to add color starting from zero index");
+        position4[""];
+        var color3 =prompt("Enter 1st color to add at specified index");
+        var position4 =prompt("Enter color 2nd position where you want to add color starting from zero index");
+        position4[""];
+        var color4 =prompt("Enter 2ndt color to add at specified index");
+        color.pop(position1,position2, color1,color2);
+        document.getElementById("demo6").innerHTML =color;
+        
+    </script>
+</body>
+</html>

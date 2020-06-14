@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment9 task8</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Qualification:</td>
+        </tr>    
+       <tr>
+           <td id="demo"></td>
+       </tr>
+       <tr>
+            <td id="demo1"></td>
+       </tr>
+       <tr>
+            <td id="demo2"></td>
+       </tr>
+    </table>
+<script>
+var student= ["Amir", "Rihan", "Abid"];
+var marks= ["300", "450", "467"];
+var totalmarks=500;
+var ans1=((marks[0]/totalmarks)*100);
+var ans2=((marks[1]/totalmarks)*100);
+var ans3=((marks[2]/totalmarks)*100);
+document.getElementById("demo").innerHTML ="Score of "+student[0]+" is "+marks[0]+"."+" Percentage: "+ans1+"%";
+document.getElementById("demo1").innerHTML ="Score of "+student[1]+" is "+marks[1]+"."+" Percentage: "+ans2+"%";
+document.getElementById("demo2").innerHTML ="Score of "+student[2]+" is "+marks[2]+"."+" Percentage: "+ans3+"%"; 
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment9 task10</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var score=["123","75","95","34"];
+        document.getElementById("demo").innerHTML ="Score of Students: "+score;
+        var sorting=score.sort(function(a, b){return a-b});
+        document.getElementById("demo1").innerHTML ="Ordered scores of Students: "+sorting;
+
+    </script>
+</body>
+</html>

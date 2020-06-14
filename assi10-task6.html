@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment10 task6</title>
+</head>
+<body> 
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+        <script> 
+        var counting=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        document.getElementById("demo").innerHTML = "Counting: ";
+        document.getElementById("demo1").innerHTML = counting; 
+        document.getElementById("demo2").innerHTML = "Reverse Counting:";
+        var counting1=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var revecounting=counting1.reverse();
+        document.getElementById("demo3").innerHTML = revecounting;
+        var counting2=[0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,16,17,18,19,20];
+        document.getElementById("demo4").innerHTML = "Even:";
+        function getEvenNumbers() {
+       
+        for (var i = 0; i < counting2.length; i++) {
+            if (counting2[i] % 2 === 0) {
+                document.writeln(counting2[i]+",");
+                
+            }
+        }
+    }
+    getEvenNumbers();
+    document.write("<br><br>");
+    function getOddNumbers() {
+        document.write("Odd:"+"<br><br>")
+        for (var i = 0; i < counting2.length; i++) {
+            if (counting2[i] % 2 === 1) {
+                document.writeln(counting2[i]+",");
+                
+            }
+        }
+    }
+
+    getOddNumbers();
+    document.write("<br><br>");
+    function getseriesNumbers() {
+        document.write("Series:"+"<br><br>")
+        for (var i = 0; i < counting2.length; i++) {
+            if (counting2[i] % 2 === 0) {
+                document.writeln(counting2[i]+"k,");
+                
+            }
+        }
+    }
+
+    getseriesNumbers();
+        
+        </script> 
+</body>
+</html>
